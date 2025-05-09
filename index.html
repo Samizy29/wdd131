@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals - Samuel Akintola Oni".</title>
-    <meta name="description" content="A simple HTML document structure.">
-    <meta author="Samuel Akintola Oni">
-    <link rel="stylesheet" href="styles/base.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="scripts/getdates.js" defer></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WDD 131 – Dynamic Web Fundamentals - Samuel Akintola Oni</title>
+<meta name="description" content="WDD 131 – Dynamic Web Fundamentals course project by Samuel Akintola Oni. Learn about me, Nigeria, and explore helpful web development resources." />
+<meta name="author" content="Samuel Akintola Oni" />
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/base.css" />
+<script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>WDD 131 – Dynamic Web Fundamentals</h1>
-        <nav>
-        <ul>
-            <li><a href="www.linkedin.com/in/
-                samuel-oni-395075359
-                " target="_blank">LinkedIn</a></li>
-            <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Favorite Scripture</a></li>
-            <li><a href="final-project/index.html">Final Project</a></li>
-        </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="hero">
-        <h2>About Me</h2>
-        <article>
-        <img src="images/profile.jpeg" alt="My Profile Photo">
-        <p>Hello! My name is Oni Samuel Akintola. I'm from Nigeria and passionate about programming, design, and personal development. I enjoy learning and sharing knowledge that builds a growth mindset.</p>
-        </article>
-        </div>
-        
-        <section class="hero">
-        <h2>My Interests</h2>
-        <img src="images/interests.jpg width = 300px height= 200px" alt="My Interests">
-        <p>In my free time, I explore web development, data analysis, and botany. I also enjoy creating educational content for students and entrepreneurs through social media and design.</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; <span id="2025"></span> Oni Samuel Akintola, Nigeria
-        <p id="lastModified"></p>
-    </footer>
+<header>
+    <h1>WDD 131 – Dynamic Web Fundamentals - Samuel Akintola Oni</h1>
+    <nav>
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+    <a href="https://byupw.instructure.com/">Canvas</a>
+    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+    <a href="#">Final Project</a>
+    <a href="#about-me">About Me</a>
+    <a href="#nigeria">Nigeria</a>
+    <a href="#resources">Resources</a>
+    </nav>
+</header>
+
+<main>
+    <section class="card" id="about-me">
+    <h2>About Me</h2>
+    <div class="card-content">
+        <p>My name is Samuel Akintola Oni. I'm from Nigeria and currently studying Web and Computer Programming at BYU–Idaho. I'm passionate about growth mindset, web development, data analysis, and inspiring others to learn and improve through technology and creativity.</p>
+        <img src="images/profile.jpeg" alt="Photo of Samuel Akintola Oni" width="200" height="200" />
+    </div>
+    </section>
+
+    <section class="card" id="nigeria">
+    <h2>Lagos, Nigeria</h2>
+    <div class="card-content">
+        <img src="images/nigeria.jpg" alt="Flag of Nigeria" width="200" />
+        <p>Nigeria is the most populous country in Africa and rich in culture, languages, and innovation. Lagos is a tech hub, often called the 'Silicon Valley of Africa'. From Nollywood to Afrobeat, Nigeria is influencing the world through creativity and resilience.</p>
+        <p class="caption"><em>Official Flag of Nigeria</em></p>
+    </div>
+    </section>
+
+    <section class="card" id="resources">
+    <h2>Web Dev Resources</h2>
+    <ul>
+        <li><a href="https://dev.to/">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+        <li><a href="#">Image Placeholder</a></li>
+    </ul>
+    </section>
+</main>
+
+<footer>
+    <p>©<span id="currentyear"></span> Samuel Akintola Oni, Nigeria</p>
+    <p id="lastModified"></p>
+</footer>
 </body>
 </html>
