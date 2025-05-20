@@ -1,0 +1,34 @@
+/* place-large.css - Desktop and larger screen styles */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  picture, .data, .weather {
+    flex: 1;
+  }
+
+  picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+  }
+
+  .svg-icon {
+    display: none;
+  }
+
+  .card {
+    margin: 2rem 0;
+  }
+}
