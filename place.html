@@ -6,8 +6,8 @@
 <meta name="description" content="Explore a beautiful place with weather info and responsive design.">
 <meta name="author" content="Oni Samuel">
 <title>Explore Nigeria</title>
-<link rel="stylesheet" href="styles/place.css">
-<link rel="stylesheet" href="styles/place-large.css">
+<link rel="stylesheet" href="styles/place.css" media="(max-width: 767px)">
+<link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
 <script src="scripts/place.js" defer></script>
 </head>
 <body>
@@ -16,31 +16,31 @@
 </header>
 
 <main>
-    <section class="hero">
-    <picture>
-        <source srcset="images/nigeria.jpg" media="(min-width: 768px)">
-        <img src="images/nigeria.jpg" alt="Scenic view of Nigeria">
-    </picture>
+  <div class="image-background">
+    <img src="images/nigeria.jpg" alt="Place Background" class="background-img">
+  </div>
+
+  <div class="info-container">
+    <section class="data-card">
+      <h2>Place Info</h2>
+      <ul>
+        <li>Location: Nigeria</li>
+        <li>Population: 200 million</li>
+        <li>Area: 923,769 km²</li>
+      </ul>
     </section>
 
-    <section class="card data">
-    <h2>Data</h2>
-    <p><strong>Capital:</strong> Abuja</p>
-    <p><strong>Population:</strong> 223 million</p>
-    <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
-    <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+    <section class="weather-card">
+      <h2>Weather <img src="images/partly-cloudy.svg" class="weather-icon" alt=""></h2>
+      <ul>
+        <li>Temp: 30°C</li>
+        <li>Humidity: 80%</li>
+        <li>Wind: 12 km/h</li>
+      </ul>
     </section>
+  </div>
+</main>
 
-    <section class="card weather">
-      <h2>Weather <span class="icon"></span></h2>
-      <p><strong>Temperature:</strong> 35 °F</p>
-      <p><strong>Wind Speed:</strong> 10 mph</p>
-      <p><strong>Wind Chill:</strong> <span id="windchill">Loading...</span></p>
-      <div class="weather-icon svg-icon">
-        <img src="images/partly-cloudy.svg" alt="Partly cloudy weather icon" width="40">
-      </div>
-    </section>
-  </main>
 
   <footer>
     <p>&copy; <span id="year"></span> Oni Samuel | Nigeria</p>
