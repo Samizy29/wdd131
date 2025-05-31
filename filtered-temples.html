@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<h lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Enhanced Temple Album</title>
-  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temples</title>
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
-<header>
-    <h1>Temple Album</h1>
-    <button id="menu" aria-label="Toggle Navigation">☰</button>
-    <nav class="navigation" id="nav">
-    <a href="#" data-filter="home">Home</a>
-    <a href="#" data-filter="old">Old</a>
-    <a href="#" data-filter="new">New</a>
-    <a href="#" data-filter="large">Large</a>
-    <a href="#" data-filter="small">Small</a>
+  <header>
+    <h1>Temple Gallery</h1>
+    <nav>
+      <button onclick="filterTemples('all')">Home</button>
+      <button onclick="filterTemples('old')">Old</button>
+      <button onclick="filterTemples('new')">New</button>
+      <button onclick="filterTemples('large')">Large</button>
+      <button onclick="filterTemples('small')">Small</button>
     </nav>
-</header>
-
-  <main>
-    <div class="temple-grid" id="temple-grid"></div>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="year"></span> | Oni Samuel Akintola</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </footer>
-
-  <script src="scripts/filtered-temples.js"></script>
+  </header>
 </body>
 </html>
+  <main id="temples-container"></main>
+
+  <footer>
+  <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span> | Samuel Oni, 🌍 Nigeria</p>
+</footer>

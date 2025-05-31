@@ -1,119 +1,112 @@
 const temples = [
   {
-    name: "Salt Lake Temple",
-    location: "Salt Lake City, Utah",
-    dedication: "1893-04-06",
-    area: 253015,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-37764-main.jpg"
-  },
-  {
-    name: "Laie Hawaii Temple",
-    location: "Laie, Hawaii",
-    dedication: "1919-11-27",
-    area: 47224,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-144-main.jpg"
-  },
-  {
-    name: "Lima Peru Temple",
-    location: "Lima, Peru",
-    dedication: "1986-01-10",
-    area: 9600,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/lima-peru-temple/lima-peru-temple-577-main.jpg"
-  },
-  {
-    name: "Accra Ghana Temple",
-    location: "Accra, Ghana",
-    dedication: "2004-01-11",
-    area: 17500,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-816-main.jpg"
-  },
-  {
-    name: "Rome Italy Temple",
-    location: "Rome, Italy",
-    dedication: "2019-03-10",
-    area: 41010,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-15786-main.jpg"
-  },
-  {
-    name: "Abidjan Ivory Coast Temple",
-    location: "Abidjan, Ivory Coast",
-    dedication: "2023-11-19",
-    area: 8700,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-38037-main.jpg"
-  },
-  {
-    name: "Payson Utah Temple",
-    location: "Payson, Utah",
-    dedication: "2015-06-07",
-    area: 96630,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-10877-main.jpg"
-  },
-  {
-    name: "Kinshasa DR Congo Temple",
-    location: "Kinshasa, DR Congo",
-    dedication: "2019-04-14",
-    area: 10500,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/kinshasa-dr-congo-temple/kinshasa-dr-congo-temple-10748-main.jpg"
-  },
-  {
-    name: "Aba Nigeria Temple",
+    templeName: "Aba Nigeria",
     location: "Aba, Nigeria",
-    dedication: "2005-08-07",
+    dedicated: "2005, August, 7",
     area: 11500,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-1183-main.jpg"
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
   },
   {
-    name: "Osaka Japan Temple",
-    location: "Osaka, Japan",
-    dedication: "1993-09-01",
-    area: 18200,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/osaka-japan-temple/osaka-japan-temple-233-main.jpg"
-  }
+    templeName: "Manti Utah",
+    location: "Manti, Utah, United States",
+    dedicated: "1888, May, 21",
+    area: 74792,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+  },
+  {
+    templeName: "Payson Utah",
+    location: "Payson, Utah, United States",
+    dedicated: "2015, June, 7",
+    area: 96630,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+  },
+  {
+    templeName: "Yigo Guam",
+    location: "Yigo, Guam",
+    dedicated: "2020, May, 2",
+    area: 6861,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+  },
+  {
+    templeName: "Washington D.C.",
+    location: "Kensington, Maryland, United States",
+    dedicated: "1974, November, 19",
+    area: 156558,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+  },
+  {
+    templeName: "Lima Perú",
+    location: "Lima, Perú",
+    dedicated: "1986, January, 10",
+    area: 9600,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+  },
+  {
+    templeName: "Mexico City Mexico",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+  {
+    templeName: "Bangkok Thailand",
+    location: "Bangkok, Thailand",
+    dedicated: "2023, January, 23",
+    area: 44371,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/bangkok-thailand-temple/bangkok-thailand-temple-40037-main.jpg"},
+  {
+    templeName: "Rome Italy",
+    location: "Rome, Italy",
+    dedicated: "2019, March, 10",
+    area: 40000,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-43512.jpg"},
+  {
+    templeName: "Kinshasa DR Congo",
+    location: "Kinshasa, Democratic Republic of the Congo",
+    dedicated: "2019, April, 14",
+    area: 12000,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/kinshasa-democratic-republic-of-the-congo-temple/kinshasa-democratic-republic-of-the-congo-temple-35720.jpg"}
 ];
 
-const grid = document.getElementById("temple-grid");
-const menuButton = document.getElementById("menu");
-const nav = document.getElementById("nav");
+const container = document.getElementById("temples-container");
 
-// Menu toggle
-menuButton.addEventListener("click", () => {
-  nav.classList.toggle("show");
-});
+function displayTemples(templesArray) {
+  container.innerHTML = "";
+  templesArray.forEach((temple) => {
+    const card = document.createElement("section");
+    card.classList.add("temple-card");
 
-// Temple card renderer
-function displayTemples(filteredTemples) {
-  grid.innerHTML = "";
-  filteredTemples.forEach((temple) => {
-    const card = document.createElement("figure");
-
-    const img = document.createElement("img");
-    img.src = temple.imageUrl;
-    img.alt = temple.name;
-    img.loading = "lazy";
-
-    const caption = document.createElement("figcaption");
-    caption.innerHTML = `
-      <h2>${temple.name}</h2>
+    card.innerHTML = `
+      <h2>${temple.templeName}</h2>
       <p><strong>Location:</strong> ${temple.location}</p>
-      <p><strong>Dedicated:</strong> ${temple.dedication}</p>
+      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
       <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+      <img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName}">
     `;
 
-    card.appendChild(img);
-    card.appendChild(caption);
-    grid.appendChild(card);
+    container.appendChild(card);
   });
 }
 
-// Filter functions
 function filterTemples(filter) {
-  let filtered;
+  let filtered = temples;
+
   switch (filter) {
     case "old":
-      filtered = temples.filter(t => new Date(t.dedication).getFullYear() < 1900);
+      filtered = temples.filter(t => parseInt(t.dedicated.split(',')[0]) < 1900);
       break;
     case "new":
-      filtered = temples.filter(t => new Date(t.dedication).getFullYear() > 2000);
+      filtered = temples.filter(t => parseInt(t.dedicated.split(',')[0]) > 2000);
       break;
     case "large":
       filtered = temples.filter(t => t.area > 90000);
@@ -122,22 +115,14 @@ function filterTemples(filter) {
       filtered = temples.filter(t => t.area < 10000);
       break;
     default:
-      filtered = temples;
+      break;
   }
+
   displayTemples(filtered);
 }
 
-// Initial display
-displayTemples(temples);
+displayTemples(temples); // Initial display
 
-// Filter button listeners
-document.querySelectorAll(".navigation a").forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    filterTemples(link.dataset.filter);
-  });
-});
-
-// Footer details
+// Footer support
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
