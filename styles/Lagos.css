@@ -28,9 +28,9 @@ header {
 header .container {
   display: flex;
   justify-content: flex-end;
-  align-items: left;
+  align-items: flex-start;
   flex-direction: row;
-  gap: 500px;
+  gap: 2rem;
 }
 
 header h1 {
