@@ -68,7 +68,7 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Weather Card - Bottom Left */
+/* Weather Card - Bottom Right */
 .weather-card {
   position: absolute;
   bottom: 20px;
@@ -93,8 +93,7 @@ main {
 
 /* Icons */
 .weather-icon {
-  width: 20px;
-  vertical-align: middle;
+  display: none;
 }
 
 /* List formatting */

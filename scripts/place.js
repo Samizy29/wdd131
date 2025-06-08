@@ -1,3 +1,4 @@
+"use strict";
 // place.js - JavaScript for W03 Country Page
 
 // Set current year and last modified date
@@ -9,23 +10,29 @@ const lastModifiedElem = document.getElementById("lastModified");
 if (lastModifiedElem) lastModifiedElem.textContent = document.lastModified;
 
 // Windchill Calculation
-const temp = 35; // static temperature in °F
-const windSpeed = 10; // static wind speed in mph
-
-function calculateWindChill(tempF, speedMph) {
-  return (
-    35.74 +
-    0.6215 * tempF -
-    35.75 * Math.pow(speedMph, 0.16) +
-    0.4275 * tempF * Math.pow(speedMph, 0.16)
-  ).toFixed(1);
+function calculateWindChill(t, s) {
+  return (t <= 10 && s > 4.8)
+    ? Math.round(
+        13.12 + 0.6215 * t - 11.37 * Math.pow(s, 0.16) + 0.3965 * t * Math.pow(s, 0.16)
+      )
+    : "N/A";
 }
 
-const windchillElem = document.getElementById("windchill");
-if (windchillElem) {
-  if (temp <= 50 && windSpeed > 3) {
-    windchillElem.textContent = `${calculateWindChill(temp, windSpeed)} °F`;
-  } else {
-    windchillElem.textContent = "N/A";
+document.addEventListener("DOMContentLoaded", () => {
+  const temp = 30; // Replace with actual temp if dynamic
+  const wind = 12; // Replace with actual wind if dynamic
+  let windChill = "N/A";
+  if (temp <= 10 && wind > 4.8) {
+    windChill = calculateWindChill(temp, wind) + "°C";
   }
-}
+  const weatherList = document.querySelector(".weather-card ul");
+  if (weatherList) {
+    weatherList.innerHTML += `<li>Wind Chill: ${windChill}</li>`;
+  }
+
+  // Footer year and last modified
+  const yearElemFooter = document.getElementById("year");
+  if (yearElemFooter) yearElemFooter.textContent = new Date().getFullYear();
+  const lastModifiedElemFooter = document.getElementById("lastModified");
+  if (lastModifiedElemFooter) lastModifiedElemFooter.textContent = document.lastModified;
+});

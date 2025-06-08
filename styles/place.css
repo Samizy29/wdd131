@@ -1,8 +1,16 @@
+@charset "UTF-8";
 :root {
   --primary-color: #b90e32;
   --accent-color: #0a4b31;
   --background-color: lightgray;
   --text-color: #000;
+}
+
+/* Ensure consistent box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -49,7 +57,7 @@ main {
 
 .data-card h2, .weather-card h2 {
   background-color: var(--accent-color);
-  color: white;
+  color:white;
   padding: 0.5rem;
   margin-top: -1rem;
   margin-bottom: 1rem;
