@@ -91,7 +91,7 @@ nav a.active {
   HERO SECTION
 ================================== */
 .hero {
-  background: url('images/africa.jpg') no-repeat center center/cover;
+  background: url('../images/image africa.webp') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 4rem 1rem;
