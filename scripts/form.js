@@ -7,9 +7,11 @@ const products = [
 ];
 
 const select = document.getElementById("product");
-products.forEach(product => {
-  const option = document.createElement("option");
-  option.value = product.id;
-  option.textContent = product.name;
-  select.appendChild(option);
-});
+if (select) {
+  products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    select.appendChild(option);
+  });
+}

@@ -27,31 +27,32 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   lazyImages.forEach(img => observer.observe(img));
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  // Menu Open/Close Buttons
   const menuOpenBtn = document.getElementById('menu-open');
   const menuCloseBtn = document.getElementById('menu-close');
   const navLinks = document.getElementById('nav-links');
-  const navItems = navLinks.querySelectorAll('a');
+  if (menuOpenBtn && menuCloseBtn && navLinks) {
+    const navItems = navLinks.querySelectorAll('a');
 
-  function openMenu() {
-    navLinks.classList.add('show');
-    menuOpenBtn.style.display = 'none';
-    menuCloseBtn.style.display = 'block';
+    function openMenu() {
+      navLinks.classList.add('show');
+      menuOpenBtn.style.display = 'none';
+      menuCloseBtn.style.display = 'block';
+    }
+
+    function closeMenu() {
+      navLinks.classList.remove('show');
+      menuOpenBtn.style.display = 'block';
+      menuCloseBtn.style.display = 'none';
+    }
+
+    menuOpenBtn.addEventListener('click', openMenu);
+    menuCloseBtn.addEventListener('click', closeMenu);
+
+    // Auto-close when link is clicked (for mobile UX)
+    navItems.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
   }
-
-  function closeMenu() {
-    navLinks.classList.remove('show');
-    menuOpenBtn.style.display = 'block';
-    menuCloseBtn.style.display = 'none';
-  }
-
-  menuOpenBtn.addEventListener('click', openMenu);
-  menuCloseBtn.addEventListener('click', closeMenu);
-
-  // Auto-close when link is clicked (for mobile UX)
-  navItems.forEach(link => {
-    link.addEventListener('click', closeMenu);
-  });
 });

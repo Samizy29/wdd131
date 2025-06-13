@@ -1,3 +1,10 @@
+/* Apply border-box to all elements for better box model handling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
