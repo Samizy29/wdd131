@@ -28,7 +28,7 @@ header {
 header .container {
   display: flex;
   justify-content: flex-end;
-  align-items: left;
+  align-items: flex-start;
   flex-direction: row;
   gap: 500px;
 }
@@ -372,4 +372,109 @@ footer a {
     padding: 0.75rem 1rem;
     display: block;
   }
+}
+
+/*================================
+  3D ROTATION
+================================== */
+.section-3d-rotation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 350px;
+  width: 100%;
+  position: relative;
+  padding-top: 2rem;
+  background-color: #e6ffe6; /* light green */
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.section-3d-rotation-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #004d00;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.section-3d-rotation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 220px;
+  max-width: 350px;
+}
+
+.section-3d-rotation h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #006400;
+  text-align: left;
+  position: static;
+}
+
+.section-3d-rotation p {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: left;
+  position: static;
+}
+
+.box {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+  margin: 0 auto;
+  max-width: 90vw;
+  max-height: 50vw;
+}
+
+.box span img{
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform-origin:center;
+    transform-style:preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box span img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    border:2px solid white;
+    border-radius:18px;
+    height:100%;
+    object-fit:cover;
 }
